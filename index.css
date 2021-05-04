@@ -1,0 +1,97 @@
+body{
+    background-color: black;
+}
+#clock{
+    margin-top: 0px;
+    font-size: 80px;
+    text-align: center;
+    color: rgb(4, 196, 255);
+    line-height: 19mm;
+}    
+#digital{
+    text-align: center;
+    position: relative;
+}
+
+#digital div{
+    color: greenyellow;
+    font-weight: normal;
+    line-height: 30px;
+    display: inline;
+    position: relative;
+    padding: 25px;
+    top: 0px;
+    line-height: 0cm;
+}
+
+
+#clockContainer{
+    border: rgb(131, 202, 0);
+    background: url(clock.png) no-repeat;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-size: 100%;
+    position: relative;
+    top: 50px;
+}
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#hour{
+    height: 117px;
+    width: 10px;
+    left: 247px;
+    top: 130px;
+    opacity: 0.8;
+    
+}
+#minute{
+    height: 140px;
+    width: 8px;
+    left: 248px;
+    top: 106px;
+    opacity: 0.8;
+    background: rgb(131, 202, 0);
+    
+}
+#second{
+    height: 152px;
+    width: 4px;
+    left: 250px;
+    top: 97px;
+    opacity: 0.8;
+    background: rgb(8, 108, 133);
+    /* transition: all 1s ease-in-out 0s; */
+    /* animation: second 60s ease-in-out 60 0s forwards; */
+}
+
+/* @keyframes second {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+
+/* #test{
+    animation: explain 1s ease-out 0s infinite;
+    transition: all 1s ease-in-out 0s;
+    position: fixed;
+    left: 0%;
+}
+
+@keyframes explain {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+    
+} */
+
