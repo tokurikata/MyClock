@@ -14,8 +14,6 @@ setInterval(() => {
     second.style.transform = `rotate(${srotation}deg)`
 }, 1000);
 
-
-
 setInterval(showTime, 1000);
 function showTime() {
     let time = new Date(Date.now());
@@ -32,7 +30,6 @@ function showTime() {
         hr = 12;
         am_pm = "AM";
     }
-  
     hour = hour < 10 ? "0" + hour : hour;
     min = min < 10 ? "0" + min : min;
     sec = sec < 10 ? "0" + sec : sec;
@@ -41,6 +38,6 @@ function showTime() {
             + min + ":" + sec + " " +am_pm;
   
     document.getElementById("clock")
-            .innerHTML = currentTime;
+       .innerHTML = currentTime;
 }
 showTime();
